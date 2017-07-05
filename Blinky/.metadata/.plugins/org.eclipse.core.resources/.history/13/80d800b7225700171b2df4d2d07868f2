@@ -1,0 +1,11 @@
+#include <Task.h>
+
+void createThread(TCB *tcb){
+	if(size > 128){
+		size  = 128;
+	}
+
+	TCB *tcb = malloc(size);
+	tcb->name = name;
+	tcb->stackSize = size;
+}

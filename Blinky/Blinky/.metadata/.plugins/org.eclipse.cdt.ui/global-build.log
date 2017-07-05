@@ -1,0 +1,1441 @@
+09:25:09 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+09:25:27 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+09:37:11 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4208	     12	   1572	   5792	   16a0	Blinky.elf
+ 
+09:37:15 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+09:46:50 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4324	     12	   1572	   5908	   1714	Blinky.elf
+ 
+09:46:52 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+09:49:00 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4276	     12	   1572	   5860	   16e4	Blinky.elf
+ 
+09:49:04 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+09:49:31 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+09:52:09 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4276	     12	   1572	   5860	   16e4	Blinky.elf
+ 
+09:52:14 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+09:57:07 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4296	     12	   1572	   5880	   16f8	Blinky.elf
+ 
+09:57:23 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+09:57:40 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+09:59:17 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4276	     12	   1572	   5860	   16e4	Blinky.elf
+ 
+09:59:24 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:00:44 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4288	     12	   1572	   5872	   16f0	Blinky.elf
+ 
+10:01:12 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:02:15 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4288	     12	   1572	   5872	   16f0	Blinky.elf
+ 
+10:02:17 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:05:45 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:05:51 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:06:08 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:07:06 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:07:43 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4288	     12	   1572	   5872	   16f0	Blinky.elf
+ 
+10:07:48 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:08:48 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4228	     12	   1572	   5812	   16b4	Blinky.elf
+ 
+10:08:52 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:09:14 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4204	     12	   1572	   5788	   169c	Blinky.elf
+ 
+10:09:19 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:15:57 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:105:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     if (i=500)
+     ^
+../Src/main.c:107:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     if (i=500)
+     ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4212	     12	   1572	   5796	   16a4	Blinky.elf
+ 
+10:16:08 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:105:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     if (i=500)
+     ^
+../Src/main.c:107:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     if (i=500)
+     ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4212	     12	   1572	   5796	   16a4	Blinky.elf
+ 
+10:16:14 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:16:33 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:16:38 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:16:46 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:18:38 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4236	     12	   1572	   5820	   16bc	Blinky.elf
+ 
+10:18:43 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:18:49 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:19:05 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:19:46 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4236	     12	   1572	   5820	   16bc	Blinky.elf
+ 
+10:19:49 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:23:41 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4292	     12	   1572	   5876	   16f4	Blinky.elf
+ 
+10:25:02 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4284	     12	   1572	   5868	   16ec	Blinky.elf
+ 
+10:25:05 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:26:02 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:27:43 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4284	     12	   1572	   5868	   16ec	Blinky.elf
+ 
+10:28:32 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4284	     12	   1572	   5868	   16ec	Blinky.elf
+ 
+10:28:37 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:29:35 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4284	     12	   1572	   5868	   16ec	Blinky.elf
+ 
+10:29:39 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:30:07 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4280	     12	   1572	   5864	   16e8	Blinky.elf
+ 
+10:30:09 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:31:06 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4280	     12	   1572	   5864	   16e8	Blinky.elf
+ 
+10:31:08 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:31:41 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4280	     12	   1572	   5864	   16e8	Blinky.elf
+ 
+10:31:43 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:32:08 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4284	     12	   1572	   5868	   16ec	Blinky.elf
+ 
+10:32:11 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:32:49 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:70:7: warning: unused variable 'i' [-Wunused-variable]
+   int i=0;
+       ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4228	     12	   1572	   5812	   16b4	Blinky.elf
+ 
+10:33:13 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:70:7: warning: unused variable 'i' [-Wunused-variable]
+   int i=0;
+       ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4228	     12	   1572	   5812	   16b4	Blinky.elf
+ 
+10:33:16 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:43:32 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4232	     12	   1572	   5816	   16b8	Blinky.elf
+ 
+10:43:35 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:43:43 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:50:30 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4280	     12	   1572	   5864	   16e8	Blinky.elf
+ 
+10:50:34 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:53:18 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:55:38 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4280	     12	   1572	   5864	   16e8	Blinky.elf
+ 
+10:56:04 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:56:33 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:56:39 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+10:58:39 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4224	     12	   1572	   5808	   16b0	Blinky.elf
+ 
+10:58:42 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+11:03:52 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4224	     12	   1572	   5808	   16b0	Blinky.elf
+ 
+11:03:55 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+11:04:04 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+11:09:53 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:71:3: error: unknown type name 'LED'
+   LED ledState=on;
+   ^
+../Src/main.c:70:12: warning: unused variable 'tickstart' [-Wunused-variable]
+   uint32_t tickstart = 0;
+            ^
+make: *** [Src/main.o] Error 1
+11:10:33 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:70:3: error: unknown type name 'LED'
+   LED ledState;
+   ^
+make: *** [Src/main.o] Error 1
+11:11:16 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4240	     12	   1572	   5824	   16c0	Blinky.elf
+ 
+11:11:23 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+11:14:01 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:70:12: warning: unused variable 'tickstart' [-Wunused-variable]
+   uint32_t tickstart=0;
+            ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4240	     12	   1572	   5824	   16c0	Blinky.elf
+ 
+11:23:28 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:124:5: error: duplicate case value
+     case led1:
+     ^
+../Src/main.c:107:4: error: previously used here
+    case led1:
+    ^
+../Src/main.c:71:12: warning: unused variable 'tickStart' [-Wunused-variable]
+   uint32_t tickStart=0;
+            ^
+make: *** [Src/main.o] Error 1
+11:24:13 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4324	     12	   1572	   5908	   1714	Blinky.elf
+ 
+11:24:18 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+12:41:11 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4324	     12	   1572	   5908	   1714	Blinky.elf
+ 
+12:42:06 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4324	     12	   1572	   5908	   1714	Blinky.elf
+ 
+12:42:08 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+12:42:19 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+12:43:37 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:108:12: error: 'ledState' undeclared (first use in this function)
+     switch(ledState){
+            ^
+../Src/main.c:108:12: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:72:14: warning: variable 'led2State' set but not used [-Wunused-but-set-variable]
+   enum blink led2State=on;
+              ^
+../Src/main.c:71:14: warning: variable 'led1State' set but not used [-Wunused-but-set-variable]
+   enum blink led1State=on;
+              ^
+make: *** [Src/main.o] Error 1
+12:43:56 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:120:6: error: 'ledState' undeclared (first use in this function)
+      ledState=on;
+      ^
+../Src/main.c:120:6: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/main.o] Error 1
+12:44:07 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4324	     12	   1572	   5908	   1714	Blinky.elf
+ 
+12:44:14 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+12:49:14 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:73:14: warning: unused variable 'led2State' [-Wunused-variable]
+   enum blink led2State=on;
+              ^
+../Src/main.c:72:14: warning: unused variable 'led1State' [-Wunused-variable]
+   enum blink led1State=on;
+              ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4280	     12	   1572	   5864	   16e8	Blinky.elf
+ 
+12:49:20 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+12:49:23 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+12:50:48 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:73:14: warning: unused variable 'led2State' [-Wunused-variable]
+   enum blink led2State=on;
+              ^
+../Src/main.c:72:14: warning: unused variable 'led1State' [-Wunused-variable]
+   enum blink led1State=on;
+              ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4296	     12	   1572	   5880	   16f8	Blinky.elf
+ 
+12:50:50 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+12:51:02 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+12:56:20 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:73:14: warning: unused variable 'led2State' [-Wunused-variable]
+   enum blink led2State=on;
+              ^
+../Src/main.c:72:14: warning: unused variable 'led1State' [-Wunused-variable]
+   enum blink led1State=on;
+              ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4296	     12	   1572	   5880	   16f8	Blinky.elf
+ 
+12:56:22 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+12:59:49 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:73:14: warning: unused variable 'led2State' [-Wunused-variable]
+   enum blink led2State=on;
+              ^
+../Src/main.c:72:14: warning: unused variable 'led1State' [-Wunused-variable]
+   enum blink led1State=on;
+              ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4304	     12	   1572	   5888	   1700	Blinky.elf
+ 
+12:59:59 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:00:28 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:73:14: warning: unused variable 'led2State' [-Wunused-variable]
+   enum blink led2State=on;
+              ^
+../Src/main.c:72:14: warning: unused variable 'led1State' [-Wunused-variable]
+   enum blink led1State=on;
+              ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4304	     12	   1572	   5888	   1700	Blinky.elf
+ 
+13:00:31 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:02:48 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:73:14: warning: unused variable 'led2State' [-Wunused-variable]
+   enum blink led2State=on;
+              ^
+../Src/main.c:72:14: warning: unused variable 'led1State' [-Wunused-variable]
+   enum blink led1State=on;
+              ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4300	     12	   1572	   5884	   16fc	Blinky.elf
+ 
+13:02:51 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:03:40 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:05:43 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:74:14: warning: unused variable 'led2State' [-Wunused-variable]
+   enum blink led2State=on;
+              ^
+../Src/main.c:73:14: warning: unused variable 'led1State' [-Wunused-variable]
+   enum blink led1State=on;
+              ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4312	     12	   1580	   5904	   1710	Blinky.elf
+ 
+13:05:47 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:06:58 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:74:14: warning: unused variable 'led2State' [-Wunused-variable]
+   enum blink led2State=on;
+              ^
+../Src/main.c:73:14: warning: unused variable 'led1State' [-Wunused-variable]
+   enum blink led1State=on;
+              ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4312	     12	   1580	   5904	   1710	Blinky.elf
+ 
+13:07:01 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:07:21 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:74:14: warning: unused variable 'led2State' [-Wunused-variable]
+   enum blink led2State=on;
+              ^
+../Src/main.c:73:14: warning: unused variable 'led1State' [-Wunused-variable]
+   enum blink led1State=on;
+              ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4312	     12	   1580	   5904	   1710	Blinky.elf
+ 
+13:07:23 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:07:42 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:74:14: warning: unused variable 'led2State' [-Wunused-variable]
+   enum blink led2State=on;
+              ^
+../Src/main.c:73:14: warning: unused variable 'led1State' [-Wunused-variable]
+   enum blink led1State=on;
+              ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4312	     12	   1580	   5904	   1710	Blinky.elf
+ 
+13:07:45 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:07:58 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:08:02 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:08:21 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:08:24 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:08:30 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:09:18 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:74:14: warning: unused variable 'led2State' [-Wunused-variable]
+   enum blink led2State=on;
+              ^
+../Src/main.c:73:14: warning: unused variable 'led1State' [-Wunused-variable]
+   enum blink led1State=on;
+              ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4312	     12	   1580	   5904	   1710	Blinky.elf
+ 
+13:09:21 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:09:59 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:74:14: warning: unused variable 'led2State' [-Wunused-variable]
+   enum blink led2State=on;
+              ^
+../Src/main.c:73:14: warning: unused variable 'led1State' [-Wunused-variable]
+   enum blink led1State=on;
+              ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4312	     12	   1580	   5904	   1710	Blinky.elf
+ 
+13:10:07 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:10:40 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:74:14: warning: unused variable 'led2State' [-Wunused-variable]
+   enum blink led2State=on;
+              ^
+../Src/main.c:73:14: warning: unused variable 'led1State' [-Wunused-variable]
+   enum blink led1State=on;
+              ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4312	     12	   1580	   5904	   1710	Blinky.elf
+ 
+13:10:49 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:16:58 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Students\ChuJaanHorng\AC6WorkSpace\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:74:14: warning: unused variable 'led2State' [-Wunused-variable]
+   enum blink led2State=on;
+              ^
+../Src/main.c:73:14: warning: unused variable 'led1State' [-Wunused-variable]
+   enum blink led1State=on;
+              ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4312	     12	   1580	   5904	   1710	Blinky.elf
+ 
+13:17:04 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+12:41:04 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+12:41:09 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.

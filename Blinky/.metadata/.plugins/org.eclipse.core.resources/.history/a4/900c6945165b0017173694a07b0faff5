@@ -1,0 +1,26 @@
+#include <stdlib.h>
+#include "Task.h"
+
+TCB *createThread(char *name, void (*task)(void), uint32_t size){
+	if(size < 128){
+		size  = 128;
+	}
+
+	TCB *tcb = (TCB *)malloc(sizeof(TCB));
+	tcb->name = name;
+	tcb->task = task;
+	tcb->stackPointer = NULL;
+	tcb->stackSize = size;
+	tcb->stackBegin = (uint32_t *)malloc(size);
+	tcb->execReturnCode = 0;
+
+	return tcb;
+}
+
+TCB *initKernel(char *mainThreadName){
+	TCB *tcb = (TCB *)malloc(sizeof(TCB));
+	tcb->name = mainThreadName;
+	tcb->stackBegin = NULL;
+	tcb->stackSize = 0;
+	return tcb;
+}

@@ -1,0 +1,283 @@
+22:07:02 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+22:14:00 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/Assembly.s
+Invoking: MCU GCC Assembler
+C:\Users\Prince\Desktop\RTOS\Experiment\Blinky\Debug
+arm-none-eabi-as -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -g -o "Src/Assembly.o" "../Src/Assembly.s"
+Finished building: ../Src/Assembly.s
+ 
+Building file: ../Src/Task.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\RTOS\Experiment\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/RTOS/Experiment/Blinky/Inc" -I"C:/Users/Prince/Desktop/RTOS/Experiment/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/RTOS/Experiment/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/RTOS/Experiment/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/RTOS/Experiment/Blinky/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/RTOS/Experiment/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/Task.d" -MT"Src/Task.o" -o "Src/Task.o" "../Src/Task.c"
+../Src/Task.c: In function 'createThread':
+../Src/Task.c:31:24: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  tcb->stackPointer[14] = (void (*)(void))task;
+                        ^
+Finished building: ../Src/Task.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\RTOS\Experiment\Blinky\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/RTOS/Experiment/Blinky/Inc" -I"C:/Users/Prince/Desktop/RTOS/Experiment/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/RTOS/Experiment/Blinky/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/RTOS/Experiment/Blinky/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/RTOS/Experiment/Blinky/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/RTOS/Experiment/Blinky/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:116:13: warning: implicit declaration of function 'initKernel' [-Wimplicit-function-declaration]
+   currTcb = initKernel("MainThread");
+             ^
+../Src/main.c:116:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   currTcb = initKernel("MainThread");
+           ^
+../Src/main.c:117:9: warning: implicit declaration of function 'createThread' [-Wimplicit-function-declaration]
+   tcb = createThread("Thread1", task1, 256);
+         ^
+../Src/main.c:117:7: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   tcb = createThread("Thread1", task1, 256);
+       ^
+../Src/main.c:119:7: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   tcb = createThread("Thread2", task2, 512);
+       ^
+Finished building: ../Src/main.c
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6224	    112	   1656	   7992	   1f38	Blinky.elf
+ 
+22:22:38 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+22:22:46 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+22:27:59 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/Assembly.s
+Invoking: MCU GCC Assembler
+C:\Users\Prince\Desktop\RTOS\Experiment\Blinky\Debug
+arm-none-eabi-as -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -g -o "Src/Assembly.o" "../Src/Assembly.s"
+../Src/Assembly.s: Assembler messages:
+../Src/Assembly.s:112: Error: ARM register expected -- `ldr'
+make: *** [Src/Assembly.o] Error 1
+22:28:08 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/Assembly.s
+Invoking: MCU GCC Assembler
+C:\Users\Prince\Desktop\RTOS\Experiment\Blinky\Debug
+arm-none-eabi-as -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -g -o "Src/Assembly.o" "../Src/Assembly.s"
+Finished building: ../Src/Assembly.s
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6216	    112	   1656	   7984	   1f30	Blinky.elf
+ 
+22:28:58 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/Assembly.s
+Invoking: MCU GCC Assembler
+C:\Users\Prince\Desktop\RTOS\Experiment\Blinky\Debug
+arm-none-eabi-as -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -g -o "Src/Assembly.o" "../Src/Assembly.s"
+Finished building: ../Src/Assembly.s
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6220	    112	   1656	   7988	   1f34	Blinky.elf
+ 
+22:29:03 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+22:30:37 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/Assembly.s
+Invoking: MCU GCC Assembler
+C:\Users\Prince\Desktop\RTOS\Experiment\Blinky\Debug
+arm-none-eabi-as -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -g -o "Src/Assembly.o" "../Src/Assembly.s"
+Finished building: ../Src/Assembly.s
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6220	    112	   1656	   7988	   1f34	Blinky.elf
+ 
+22:30:41 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+22:31:36 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/Assembly.s
+Invoking: MCU GCC Assembler
+C:\Users\Prince\Desktop\RTOS\Experiment\Blinky\Debug
+arm-none-eabi-as -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -g -o "Src/Assembly.o" "../Src/Assembly.s"
+Finished building: ../Src/Assembly.s
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6220	    112	   1656	   7988	   1f34	Blinky.elf
+ 
+22:31:40 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+22:34:24 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/Assembly.s
+Invoking: MCU GCC Assembler
+C:\Users\Prince\Desktop\RTOS\Experiment\Blinky\Debug
+arm-none-eabi-as -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -g -o "Src/Assembly.o" "../Src/Assembly.s"
+../Src/Assembly.s: Assembler messages:
+../Src/Assembly.s:112: Error: cannot use register index with PC-relative addressing -- `str R0,sp'
+make: *** [Src/Assembly.o] Error 1
+22:34:46 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/Assembly.s
+Invoking: MCU GCC Assembler
+C:\Users\Prince\Desktop\RTOS\Experiment\Blinky\Debug
+arm-none-eabi-as -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -g -o "Src/Assembly.o" "../Src/Assembly.s"
+Finished building: ../Src/Assembly.s
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6220	    112	   1656	   7988	   1f34	Blinky.elf
+ 
+22:34:51 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+22:58:40 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/Assembly.s
+Invoking: MCU GCC Assembler
+C:\Users\Prince\Desktop\RTOS\Experiment\Blinky\Debug
+arm-none-eabi-as -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -g -o "Src/Assembly.o" "../Src/Assembly.s"
+../Src/Assembly.s: Assembler messages:
+../Src/Assembly.s:112: Error: having the base register in the register list when using write back is UNPREDICTABLE -- `push {SP}'
+../Src/Assembly.s:113: Error: ARM register expected -- `ldr [SP],[R0,#12]'
+../Src/Assembly.s:114: Error: having the base register in the register list when using write back is UNPREDICTABLE -- `pop {SP}'
+make: *** [Src/Assembly.o] Error 1
+22:59:36 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/Assembly.s
+Invoking: MCU GCC Assembler
+C:\Users\Prince\Desktop\RTOS\Experiment\Blinky\Debug
+arm-none-eabi-as -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -g -o "Src/Assembly.o" "../Src/Assembly.s"
+../Src/Assembly.s: Assembler messages:
+../Src/Assembly.s:113: Error: ARM register expected -- `ldr [SP],[R0,#12]'
+make: *** [Src/Assembly.o] Error 1
+23:00:12 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/Assembly.s
+Invoking: MCU GCC Assembler
+C:\Users\Prince\Desktop\RTOS\Experiment\Blinky\Debug
+arm-none-eabi-as -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -g -o "Src/Assembly.o" "../Src/Assembly.s"
+Finished building: ../Src/Assembly.s
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6224	    112	   1656	   7992	   1f38	Blinky.elf
+ 
+23:00:19 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+23:02:39 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/Assembly.s
+Invoking: MCU GCC Assembler
+C:\Users\Prince\Desktop\RTOS\Experiment\Blinky\Debug
+arm-none-eabi-as -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -g -o "Src/Assembly.o" "../Src/Assembly.s"
+Finished building: ../Src/Assembly.s
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6228	    112	   1656	   7996	   1f3c	Blinky.elf
+ 
+23:02:48 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+23:02:51 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.
+23:05:12 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+Building file: ../Src/Assembly.s
+Invoking: MCU GCC Assembler
+C:\Users\Prince\Desktop\RTOS\Experiment\Blinky\Debug
+arm-none-eabi-as -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -g -o "Src/Assembly.o" "../Src/Assembly.s"
+Finished building: ../Src/Assembly.s
+ 
+Building target: Blinky.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Blinky.elf" @"objects.list"   -lm
+Finished building target: Blinky.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Blinky.elf" "Blinky.bin"
+arm-none-eabi-size "Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6224	    112	   1656	   7992	   1f38	Blinky.elf
+ 
+23:05:21 **** Incremental Build of configuration Debug for project Blinky ****
+make all 
+make: Nothing to be done for `all'.

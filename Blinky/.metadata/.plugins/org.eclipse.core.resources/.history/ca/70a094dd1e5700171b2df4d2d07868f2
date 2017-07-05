@@ -1,0 +1,13 @@
+#ifndef	TASK_H
+#define	TASK_H
+
+typedef struct TCB TCB;
+struct TCB{
+	char *name;
+	uint32_t *stackPointer;
+	uint32_t *stackEnd;
+	uint32_t stackSize;
+	uint32_t execReturnCode;	// LR on interrupt
+};
+
+#endif	// TASK_H
