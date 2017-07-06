@@ -8,8 +8,8 @@ struct TCB{
 	TCB	*next;
 	char *name;
 	void (*task)(void);
-	uint32_t *stackPointer;
-	uint32_t *stackBegin;
+	uint8_t *stackPointer;
+	uint8_t *stackBegin;
 	uint32_t stackSize;
 	uint32_t execReturnCode;	// LR on interrupt
 };

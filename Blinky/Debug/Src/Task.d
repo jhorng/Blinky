@@ -1,4 +1,3 @@
-Src/Task.o: ../Src/Task.c \
- C:/Users/Prince/Desktop/RTOS/Experiment/Blinky/Inc/Task.h
+Src/Task.o: ../Src/Task.c C:/Users/TARUC/Desktop/TCB/Blinky/Inc/Task.h
 
-C:/Users/Prince/Desktop/RTOS/Experiment/Blinky/Inc/Task.h:
+C:/Users/TARUC/Desktop/TCB/Blinky/Inc/Task.h:

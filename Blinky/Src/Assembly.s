@@ -106,14 +106,16 @@ MY_TIM1_UP_IRQHandler:
   str	R1, [R0, #20]	// store 0x0badface into structure TCB's stackSize through pointer currTcb
 */
 
+  //push	{LR}
+  push	{R4-R11}
 
   ldr	R0, =currTcb
   ldr	R0, [R0]
-  ldr	R1, [SP]
+  ldr	R0, [R0]
+  ldr	R0, [R0]
   ldr	R13, [R0, #12]
-  bx	LR
-  str	R1, [SP]
-
+  pop	{R4-R11}
+  //pop	{LR}
 
   // Your task switching code ends here
 

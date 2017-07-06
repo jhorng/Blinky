@@ -63,8 +63,8 @@ static void MX_TIM1_Init(void);
 /*int add2Integers(int, int);
 int add4Integers(int, int, int, int);
 int add5Integers(int, int, int, int, int);
-int add6Integers(int, int, int, int, int, int);*/
-int assemblyMain(void);
+int add6Integers(int, int, int, int, int, int);
+int assemblyMain(void);*/
 int sub2Integers(int v1, int v2);
 int sub5Integers(int v1, int v2, int v3, int v4, int v5);
 int sub6Integers(int v1, int v2, int v3, int v4, int v5, int v6);
@@ -116,6 +116,7 @@ int main(void)
   currTcb = initKernel("MainThread");
   tcb = createThread("Thread1", task1, 256);
   currTcb->next = tcb;
+  currTcb->next->next = currTcb;
   tcb = createThread("Thread2", task2, 512);
   currTcb->next->next = tcb;
   currTcb->next->next->next = currTcb;
@@ -141,7 +142,7 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-	  j++;
+	  j=tickLed1;
 	  /*uint32_t tick = 0;
 	  HAL_GPIO_TogglePin(amberLed2_GPIO_Port, amberLed2_Pin);
 
