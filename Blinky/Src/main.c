@@ -70,6 +70,7 @@ int sub5Integers(int v1, int v2, int v3, int v4, int v5);
 int sub6Integers(int v1, int v2, int v3, int v4, int v5, int v6);
 void task1(void);
 void task2(void);
+void taskSwitchCounter();
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
@@ -116,13 +117,12 @@ int main(void)
   currTcb = initKernel("MainThread");
   tcb = createThread("Thread1", task1, 256);
   currTcb->next = tcb;
-  currTcb->next->next = currTcb;
   tcb = createThread("Thread2", task2, 512);
   currTcb->next->next = tcb;
   currTcb->next->next->next = currTcb;
 
   //assemblyMain();
-
+  __HAL_TIM_ENABLE(&htim1);
   HAL_TIM_Base_Start_IT(&htim1);
 
   /*volatile int val = add2Integers(23, 56);
@@ -313,6 +313,18 @@ void task2(void){
 
 	while(1){
 		k-=10;
+	}
+}
+
+void taskSwitchCounter(){
+	volatile int counter = 2;
+
+	counter--;
+	if(counter != 0){
+		return;
+	}
+	else{
+		counter = 2;
 	}
 }
 
