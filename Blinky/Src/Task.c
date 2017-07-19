@@ -13,7 +13,7 @@ TCB *createThread(char *name, void (*task)(void), uint32_t size){
 	tcb->stackBegin = (uint8_t *)malloc(size);
 	tcb->execReturnCode = 0xfffffff9;
 	tcb->stackPointer = (uint8_t *)(tcb->stackBegin + size);
-	tcb->stackPointer -= 72;
+	tcb->stackPointer -= 64;
 	*(uint32_t *)&tcb->stackPointer[0] = 0x11111111;	// R4
 	*(uint32_t *)&tcb->stackPointer[4] = 0x22222222;	// R5
 	*(uint32_t *)&tcb->stackPointer[8] = 0x33333333;	// R6

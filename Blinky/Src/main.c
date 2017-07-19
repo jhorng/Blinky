@@ -70,7 +70,7 @@ int sub5Integers(int v1, int v2, int v3, int v4, int v5);
 int sub6Integers(int v1, int v2, int v3, int v4, int v5, int v6);
 void task1(void);
 void task2(void);
-void taskSwitchCounter();
+int interruptCounterEnable();
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
@@ -122,8 +122,8 @@ int main(void)
   currTcb->next->next->next = currTcb;
 
   //assemblyMain();
-  __HAL_TIM_ENABLE(&htim1);
   HAL_TIM_Base_Start_IT(&htim1);
+  //taskSwitchCounter(2);
 
   /*volatile int val = add2Integers(23, 56);
   volatile int val2 = add4Integers(21, 5, 10, 26);
@@ -316,16 +316,13 @@ void task2(void){
 	}
 }
 
-void taskSwitchCounter(){
-	volatile int counter = 2;
-
-	counter--;
-	if(counter != 0){
-		return;
-	}
-	else{
+int interruptCounterEnable(){
+	static int counter = 2;
+	if(counter == 0){
 		counter = 2;
 	}
+	counter--;
+	return counter;
 }
 
 int sub2Integers(int v1, int v2){
