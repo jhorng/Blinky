@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Inc
+HeaderPath=C:/Users/TARUC/Desktop/TCB/Blinky/Inc
 HeaderFiles=stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;FreeRTOSConfig.h;
-SourcePath=C:/Users/TARUC/Students/ChuJaanHorng/AC6WorkSpace/Blinky/Src
+SourcePath=C:/Users/TARUC/Desktop/TCB/Blinky/Src
 SourceFiles=stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;FreeRTOSConfig.h;freertos.c;stm32f1xx_hal_timebase_TIM.c;
 
 [PreviousLibFiles]

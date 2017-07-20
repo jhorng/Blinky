@@ -1,6 +1,6 @@
-20:01:38 **** Incremental Build of configuration Debug for project Blinky ****
+13:29:35 **** Incremental Build of configuration Debug for project Blinky ****
 make all 
 make: Nothing to be done for `all'.
 
-20:01:38 Build Finished (took 370ms)
+13:29:35 Build Finished (took 120ms)
 

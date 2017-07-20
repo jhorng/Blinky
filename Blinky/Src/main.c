@@ -39,7 +39,6 @@
 #include "main.h"
 #include "stm32f1xx_hal.h"
 
-
 /* USER CODE BEGIN Includes */
 #include "Task.h"
 /* USER CODE END Includes */
@@ -70,7 +69,7 @@ int sub5Integers(int v1, int v2, int v3, int v4, int v5);
 int sub6Integers(int v1, int v2, int v3, int v4, int v5, int v6);
 void task1(void);
 void task2(void);
-int interruptCounterEnable();
+void interruptCounterEnable();
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
@@ -90,7 +89,7 @@ int main(void)
   tickLed1 = HAL_GetTick();
   tickLed2 = HAL_GetTick();
   TCB *tcb;
-  int j=0;
+  volatile int j;
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -122,9 +121,9 @@ int main(void)
   currTcb->next->next->next = currTcb;
 
   //assemblyMain();
+  //interruptCounterEnable();
+  __HAL_TIM_ENABLE(&htim1);
   HAL_TIM_Base_Start_IT(&htim1);
-  //taskSwitchCounter(2);
-
   /*volatile int val = add2Integers(23, 56);
   volatile int val2 = add4Integers(21, 5, 10, 26);
   volatile int val3 = add5Integers(1, 2, 3, 4, 5);
@@ -142,7 +141,8 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-	  j=tickLed1;
+
+	  j=1;
 	  /*uint32_t tick = 0;
 	  HAL_GPIO_TogglePin(amberLed2_GPIO_Port, amberLed2_Pin);
 
@@ -186,11 +186,12 @@ void SystemClock_Config(void)
 
     /**Initializes the CPU, AHB and APB busses clocks 
     */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.HSICalibrationValue = 16;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI_DIV2;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
@@ -206,7 +207,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
   }
@@ -270,6 +271,7 @@ static void MX_GPIO_Init(void)
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOC_CLK_ENABLE();
+  __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
@@ -316,13 +318,14 @@ void task2(void){
 	}
 }
 
-int interruptCounterEnable(){
-	static int counter = 2;
+void interruptCounterEnable(){
+	static int counter = 1;
+	HAL_TIM_Base_Start_IT(&htim1);
 	if(counter == 0){
-		counter = 2;
+		counter--;
+		counter = 1;
+		return;
 	}
-	counter--;
-	return counter;
 }
 
 int sub2Integers(int v1, int v2){
