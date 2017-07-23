@@ -1,0 +1,26 @@
+---
+:source:
+  :path: test
+  :file: test_LinkedList.c
+:successes:
+- :test: test_initElement_return_NULL_and_five_given_the_argument_value_is_five
+  :line: 8
+  :message: ''
+- :test: test_initLinkedList_return_NULL_for_both_head_and_tail
+  :line: 15
+  :message: ''
+- :test: test_addList_head_and_tail_link_with_an_element
+  :line: 22
+  :message: ''
+- :test: test_addList_with_two_elements_with_value_ten_and_twenty_respectively
+  :line: 34
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 4
+  :passed: 4
+  :failed: 0
+  :ignored: 0
+:stdout:
+- ''
