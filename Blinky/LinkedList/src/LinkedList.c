@@ -16,7 +16,7 @@ linkedList *initLinkedList(){
   return list;
 }
 
-void addList(linkedList *list, listElement *element){
+void addElement(linkedList *list, listElement *element){
   if(list->head == NULL && list->tail == NULL){
     list->head = element;
     list->tail = element;
@@ -26,3 +26,28 @@ void addList(linkedList *list, listElement *element){
     list->tail = element;
   }
 }
+
+listElement *removeElementFromFront(linkedList *list){
+  if(list->head == NULL){
+    printf("link not form!\n");
+    return NULL;
+  }
+  
+  listElement *currentElement = malloc(sizeof(listElement));
+  
+  currentElement = list->head; // currentElement is pointing to the whole list. 
+                               // Not extracting the first element.
+  if(list->head->next == NULL){
+    return currentElement;
+  }
+  else{
+    list->head = list->head->next;    
+  }
+  
+  return currentElement;
+}
+
+
+
+
+

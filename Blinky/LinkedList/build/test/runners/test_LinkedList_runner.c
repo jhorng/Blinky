@@ -32,8 +32,9 @@ extern void setUp(void);
 extern void tearDown(void);
 extern void test_initElement_return_NULL_and_five_given_the_argument_value_is_five(void);
 extern void test_initLinkedList_return_NULL_for_both_head_and_tail(void);
-extern void test_addList_head_and_tail_link_with_an_element(void);
-extern void test_addList_with_two_elements_with_value_ten_and_twenty_respectively(void);
+extern void test_addElement_head_and_tail_link_with_an_element(void);
+extern void test_addElement_with_two_elements_with_value_ten_and_twenty_respectively(void);
+extern void test_removeElementFromFront_with_list_of_value_five_six_seven_should_return_five(void);
 
 
 /*=======Test Reset Option=====*/
@@ -49,10 +50,11 @@ void resetTest(void)
 int main(void)
 {
   UnityBegin("test_LinkedList.c");
-  RUN_TEST(test_initElement_return_NULL_and_five_given_the_argument_value_is_five, 8);
-  RUN_TEST(test_initLinkedList_return_NULL_for_both_head_and_tail, 15);
-  RUN_TEST(test_addList_head_and_tail_link_with_an_element, 22);
-  RUN_TEST(test_addList_with_two_elements_with_value_ten_and_twenty_respectively, 34);
+  RUN_TEST(test_initElement_return_NULL_and_five_given_the_argument_value_is_five, 9);
+  RUN_TEST(test_initLinkedList_return_NULL_for_both_head_and_tail, 16);
+  RUN_TEST(test_addElement_head_and_tail_link_with_an_element, 23);
+  RUN_TEST(test_addElement_with_two_elements_with_value_ten_and_twenty_respectively, 35);
+  RUN_TEST(test_removeElementFromFront_with_list_of_value_five_six_seven_should_return_five, 50);
 
   return (UnityEnd());
 }

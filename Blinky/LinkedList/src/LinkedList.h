@@ -15,5 +15,7 @@ struct linkedList{
 
 listElement *initElement(int value);
 linkedList *initLinkedList();
+void addElement(linkedList *list, listElement *element);
+listElement *removeElementFromFront(linkedList *list);
 
 #endif // _LINKEDLIST_H
