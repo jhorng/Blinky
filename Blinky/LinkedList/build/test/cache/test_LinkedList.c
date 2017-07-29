@@ -132,9 +132,9 @@ void test_removeElementFromFront_with_list_of_value_five_six_seven_should_return
 
 
 
-  UnityAssertEqualNumber((_U_SINT)((5)), (_U_SINT)((returnElement->value)), (((void *)0)), (_U_UINT)(70), UNITY_DISPLAY_STYLE_INT);
+  UnityAssertEqualNumber((_U_SINT)((((void *)0))), (_U_SINT)((returnElement->next)), (((void *)0)), (_U_UINT)(70), UNITY_DISPLAY_STYLE_INT);
 
-
+  UnityAssertEqualNumber((_U_SINT)((5)), (_U_SINT)((returnElement->value)), (((void *)0)), (_U_UINT)(71), UNITY_DISPLAY_STYLE_INT);
 
 
 
@@ -147,5 +147,65 @@ void test_removeElementFromFront_with_list_of_value_five_six_seven_should_return
   UnityAssertEqualNumber((_U_SINT)((7)), (_U_SINT)((list->head->next->value)), (((void *)0)), (_U_UINT)(76), UNITY_DISPLAY_STYLE_INT);
 
   UnityAssertEqualNumber((_U_SINT)((7)), (_U_SINT)((list->tail->value)), (((void *)0)), (_U_UINT)(77), UNITY_DISPLAY_STYLE_INT);
+
+}
+
+
+
+void test_removedElementFromFront_add_to_the_back_of_the_list_given_value_one_two_three_would_become_two_three_one(void){
+
+  linkedList *list = initLinkedList();
+
+  listElement *element1 = initElement(1);
+
+  listElement *element2 = initElement(2);
+
+  listElement *element3 = initElement(3);
+
+  listElement *removedElement;
+
+
+
+  addElement(list, element1);
+
+  addElement(list, element2);
+
+  addElement(list, element3);
+
+
+
+  UnityAssertEqualNumber((_U_SINT)((((void *)0))), (_U_SINT)((list->head->next->next->next)), (((void *)0)), (_U_UINT)(91), UNITY_DISPLAY_STYLE_INT);
+
+  UnityAssertEqualNumber((_U_SINT)((((void *)0))), (_U_SINT)((list->tail->next)), (((void *)0)), (_U_UINT)(92), UNITY_DISPLAY_STYLE_INT);
+
+  UnityAssertEqualNumber((_U_SINT)((1)), (_U_SINT)((list->head->value)), (((void *)0)), (_U_UINT)(93), UNITY_DISPLAY_STYLE_INT);
+
+  UnityAssertEqualNumber((_U_SINT)((2)), (_U_SINT)((list->head->next->value)), (((void *)0)), (_U_UINT)(94), UNITY_DISPLAY_STYLE_INT);
+
+  UnityAssertEqualNumber((_U_SINT)((3)), (_U_SINT)((list->head->next->next->value)), (((void *)0)), (_U_UINT)(95), UNITY_DISPLAY_STYLE_INT);
+
+  UnityAssertEqualNumber((_U_SINT)((3)), (_U_SINT)((list->tail->value)), (((void *)0)), (_U_UINT)(96), UNITY_DISPLAY_STYLE_INT);
+
+
+
+  removedElement = removeElementFromFront(list);
+
+
+
+  addElement(list, removedElement);
+
+
+
+  UnityAssertEqualNumber((_U_SINT)((((void *)0))), (_U_SINT)((list->head->next->next->next)), (((void *)0)), (_U_UINT)(102), UNITY_DISPLAY_STYLE_INT);
+
+  UnityAssertEqualNumber((_U_SINT)((((void *)0))), (_U_SINT)((list->tail->next)), (((void *)0)), (_U_UINT)(103), UNITY_DISPLAY_STYLE_INT);
+
+  UnityAssertEqualNumber((_U_SINT)((2)), (_U_SINT)((list->head->value)), (((void *)0)), (_U_UINT)(104), UNITY_DISPLAY_STYLE_INT);
+
+  UnityAssertEqualNumber((_U_SINT)((3)), (_U_SINT)((list->head->next->value)), (((void *)0)), (_U_UINT)(105), UNITY_DISPLAY_STYLE_INT);
+
+  UnityAssertEqualNumber((_U_SINT)((1)), (_U_SINT)((list->head->next->next->value)), (((void *)0)), (_U_UINT)(106), UNITY_DISPLAY_STYLE_INT);
+
+  UnityAssertEqualNumber((_U_SINT)((1)), (_U_SINT)((list->tail->value)), (((void *)0)), (_U_UINT)(107), UNITY_DISPLAY_STYLE_INT);
 
 }

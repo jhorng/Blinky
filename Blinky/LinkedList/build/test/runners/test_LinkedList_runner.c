@@ -35,6 +35,7 @@ extern void test_initLinkedList_return_NULL_for_both_head_and_tail(void);
 extern void test_addElement_head_and_tail_link_with_an_element(void);
 extern void test_addElement_with_two_elements_with_value_ten_and_twenty_respectively(void);
 extern void test_removeElementFromFront_with_list_of_value_five_six_seven_should_return_five(void);
+extern void test_removedElementFromFront_add_to_the_back_of_the_list_given_value_one_two_three_would_become_two_three_one(void);
 
 
 /*=======Test Reset Option=====*/
@@ -55,6 +56,7 @@ int main(void)
   RUN_TEST(test_addElement_head_and_tail_link_with_an_element, 23);
   RUN_TEST(test_addElement_with_two_elements_with_value_ten_and_twenty_respectively, 35);
   RUN_TEST(test_removeElementFromFront_with_list_of_value_five_six_seven_should_return_five, 50);
+  RUN_TEST(test_removedElementFromFront_add_to_the_back_of_the_list_given_value_one_two_three_would_become_two_three_one, 80);
 
   return (UnityEnd());
 }

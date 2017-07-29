@@ -67,8 +67,8 @@ void test_removeElementFromFront_with_list_of_value_five_six_seven_should_return
   
   returnElement = removeElementFromFront(list);
   
+  TEST_ASSERT_EQUAL(NULL, returnElement->next);
   TEST_ASSERT_EQUAL(5, returnElement->value);
-  // TEST_ASSERT_EQUAL(6, returnElement->next->value);
   
   TEST_ASSERT_EQUAL(NULL, list->head->next->next);
   TEST_ASSERT_EQUAL(NULL, list->tail->next);
@@ -77,6 +77,35 @@ void test_removeElementFromFront_with_list_of_value_five_six_seven_should_return
   TEST_ASSERT_EQUAL(7, list->tail->value);
 }
 
+void test_removedElementFromFront_add_to_the_back_of_the_list_given_value_one_two_three_would_become_two_three_one(void){
+  linkedList *list = initLinkedList();
+  listElement *element1 = initElement(1);
+  listElement *element2 = initElement(2);
+  listElement *element3 = initElement(3);
+  listElement *removedElement;
+  
+  addElement(list, element1);
+  addElement(list, element2);
+  addElement(list, element3);
+  
+  TEST_ASSERT_EQUAL(NULL, list->head->next->next->next);
+  TEST_ASSERT_EQUAL(NULL, list->tail->next);
+  TEST_ASSERT_EQUAL(1, list->head->value);
+  TEST_ASSERT_EQUAL(2, list->head->next->value);
+  TEST_ASSERT_EQUAL(3, list->head->next->next->value);
+  TEST_ASSERT_EQUAL(3, list->tail->value);
+  
+  removedElement = removeElementFromFront(list);
+  
+  addElement(list, removedElement);
+  
+  TEST_ASSERT_EQUAL(NULL, list->head->next->next->next);
+  TEST_ASSERT_EQUAL(NULL, list->tail->next);
+  TEST_ASSERT_EQUAL(2, list->head->value);
+  TEST_ASSERT_EQUAL(3, list->head->next->value);
+  TEST_ASSERT_EQUAL(1, list->head->next->next->value);
+  TEST_ASSERT_EQUAL(1, list->tail->value);
+}
 
 
 

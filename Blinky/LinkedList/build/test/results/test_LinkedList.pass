@@ -18,11 +18,14 @@
 - :test: test_removeElementFromFront_with_list_of_value_five_six_seven_should_return_five
   :line: 50
   :message: ''
+- :test: test_removedElementFromFront_add_to_the_back_of_the_list_given_value_one_two_three_would_become_two_three_one
+  :line: 80
+  :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 5
-  :passed: 5
+  :total: 6
+  :passed: 6
   :failed: 0
   :ignored: 0
 :stdout:

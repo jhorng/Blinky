@@ -28,24 +28,30 @@ void addElement(linkedList *list, listElement *element){
 }
 
 listElement *removeElementFromFront(linkedList *list){
-  if(list->head == NULL){
-    printf("link not form!\n");
-    return NULL;
+  listElement *currentElement;
+  
+  if(list == NULL){
+    printf("No linked list is formed!\n");
   }
   
-  listElement *currentElement = malloc(sizeof(listElement));
-  
-  currentElement = list->head; // currentElement is pointing to the whole list. 
-                               // Not extracting the first element.
-  if(list->head->next == NULL){
-    return currentElement;
+  if(list->head == NULL){
+    currentElement = NULL;
   }
   else{
-    list->head = list->head->next;    
+    currentElement = list->head; 
+    if(list->head->next == NULL){
+      list->head = NULL;
+      list->tail = NULL;
+    }
+    else{
+      list->head = list->head->next;
+      currentElement->next = NULL;
+    }
   }
   
   return currentElement;
 }
+
 
 
 
