@@ -38,7 +38,7 @@ void test_initLinkedList_return_NULL_for_both_head_and_tail(void){
 
 
 
-void test_addElement_head_and_tail_link_with_an_element(void){
+void test_addElementToBack_head_and_tail_link_with_an_element(void){
 
   linkedList *list = initLinkedList();
 
@@ -46,7 +46,7 @@ void test_addElement_head_and_tail_link_with_an_element(void){
 
 
 
-  addElement(list, element);
+  addElementToBack(list, element);
 
 
 
@@ -62,7 +62,7 @@ void test_addElement_head_and_tail_link_with_an_element(void){
 
 
 
-void test_addElement_with_two_elements_with_value_ten_and_twenty_respectively(void){
+void test_addElementToBack_with_two_elements_with_value_ten_and_twenty_respectively(void){
 
   linkedList *list = initLinkedList();
 
@@ -72,9 +72,9 @@ void test_addElement_with_two_elements_with_value_ten_and_twenty_respectively(vo
 
 
 
-  addElement(list, element1);
+  addElementToBack(list, element1);
 
-  addElement(list, element2);
+  addElementToBack(list, element2);
 
 
 
@@ -106,11 +106,11 @@ void test_removeElementFromFront_with_list_of_value_five_six_seven_should_return
 
 
 
-  addElement(list, element1);
+  addElementToBack(list, element1);
 
-  addElement(list, element2);
+  addElementToBack(list, element2);
 
-  addElement(list, element3);
+  addElementToBack(list, element3);
 
 
 
@@ -166,11 +166,11 @@ void test_removedElementFromFront_add_to_the_back_of_the_list_given_value_one_tw
 
 
 
-  addElement(list, element1);
+  addElementToBack(list, element1);
 
-  addElement(list, element2);
+  addElementToBack(list, element2);
 
-  addElement(list, element3);
+  addElementToBack(list, element3);
 
 
 
@@ -192,7 +192,7 @@ void test_removedElementFromFront_add_to_the_back_of_the_list_given_value_one_tw
 
 
 
-  addElement(list, removedElement);
+  addElementToBack(list, removedElement);
 
 
 
@@ -207,5 +207,49 @@ void test_removedElementFromFront_add_to_the_back_of_the_list_given_value_one_tw
   UnityAssertEqualNumber((_U_SINT)((1)), (_U_SINT)((list->head->next->next->value)), (((void *)0)), (_U_UINT)(106), UNITY_DISPLAY_STYLE_INT);
 
   UnityAssertEqualNumber((_U_SINT)((1)), (_U_SINT)((list->tail->value)), (((void *)0)), (_U_UINT)(107), UNITY_DISPLAY_STYLE_INT);
+
+}
+
+
+
+void test_peepFront_after_list_has_removeFromFront_and_addElementToBack_should_return_six_given_the_original_list_is_five_six_seven(void){
+
+  linkedList *list = initLinkedList();
+
+  listElement *element1 = initElement(5);
+
+  listElement *element2 = initElement(6);
+
+  listElement *element3 = initElement(7);
+
+  listElement *removedElement, *peepedElement;
+
+
+
+  addElementToBack(list, element1);
+
+  addElementToBack(list, element2);
+
+  addElementToBack(list, element3);
+
+
+
+  removedElement = removeElementFromFront(list);
+
+
+
+  addElementToBack(list, removedElement);
+
+
+
+  peepedElement = peepFront(list);
+
+
+
+  UnityAssertEqualNumber((_U_SINT)((list->head)), (_U_SINT)((peepedElement)), (((void *)0)), (_U_UINT)(127), UNITY_DISPLAY_STYLE_INT);
+
+  UnityAssertEqualNumber((_U_SINT)((6)), (_U_SINT)((peepedElement->value)), (((void *)0)), (_U_UINT)(128), UNITY_DISPLAY_STYLE_INT);
+
+
 
 }

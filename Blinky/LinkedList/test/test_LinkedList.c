@@ -20,11 +20,11 @@ void test_initLinkedList_return_NULL_for_both_head_and_tail(void){
   TEST_ASSERT_EQUAL(NULL, list->tail);
 }
 
-void test_addElement_head_and_tail_link_with_an_element(void){
+void test_addElementToBack_head_and_tail_link_with_an_element(void){
   linkedList *list = initLinkedList();
   listElement *element = initElement(5);
   
-  addElement(list, element);
+  addElementToBack(list, element);
   
   TEST_ASSERT_EQUAL(NULL, list->head->next);
   TEST_ASSERT_EQUAL(NULL, list->tail->next);
@@ -32,13 +32,13 @@ void test_addElement_head_and_tail_link_with_an_element(void){
   TEST_ASSERT_EQUAL(5, list->tail->value);
 }
 
-void test_addElement_with_two_elements_with_value_ten_and_twenty_respectively(void){
+void test_addElementToBack_with_two_elements_with_value_ten_and_twenty_respectively(void){
   linkedList *list = initLinkedList();
   listElement *element1 = initElement(10);
   listElement *element2 = initElement(20);
   
-  addElement(list, element1);
-  addElement(list, element2);
+  addElementToBack(list, element1);
+  addElementToBack(list, element2);
   
   TEST_ASSERT_EQUAL(NULL, list->head->next->next);
   TEST_ASSERT_EQUAL(NULL, list->tail->next);
@@ -54,9 +54,9 @@ void test_removeElementFromFront_with_list_of_value_five_six_seven_should_return
   listElement *element3 = initElement(7);
   listElement *returnElement = malloc(sizeof(listElement));
   
-  addElement(list, element1);
-  addElement(list, element2);
-  addElement(list, element3);
+  addElementToBack(list, element1);
+  addElementToBack(list, element2);
+  addElementToBack(list, element3);
   
   TEST_ASSERT_EQUAL(NULL, list->head->next->next->next);
   TEST_ASSERT_EQUAL(NULL, list->tail->next);
@@ -84,9 +84,9 @@ void test_removedElementFromFront_add_to_the_back_of_the_list_given_value_one_tw
   listElement *element3 = initElement(3);
   listElement *removedElement;
   
-  addElement(list, element1);
-  addElement(list, element2);
-  addElement(list, element3);
+  addElementToBack(list, element1);
+  addElementToBack(list, element2);
+  addElementToBack(list, element3);
   
   TEST_ASSERT_EQUAL(NULL, list->head->next->next->next);
   TEST_ASSERT_EQUAL(NULL, list->tail->next);
@@ -97,7 +97,7 @@ void test_removedElementFromFront_add_to_the_back_of_the_list_given_value_one_tw
   
   removedElement = removeElementFromFront(list);
   
-  addElement(list, removedElement);
+  addElementToBack(list, removedElement);
   
   TEST_ASSERT_EQUAL(NULL, list->head->next->next->next);
   TEST_ASSERT_EQUAL(NULL, list->tail->next);
@@ -107,6 +107,25 @@ void test_removedElementFromFront_add_to_the_back_of_the_list_given_value_one_tw
   TEST_ASSERT_EQUAL(1, list->tail->value);
 }
 
-
+void test_peepFront_after_list_has_removeFromFront_and_addElementToBack_should_return_six_given_the_original_list_is_five_six_seven(void){
+  linkedList *list = initLinkedList();
+  listElement *element1 = initElement(5);
+  listElement *element2 = initElement(6);
+  listElement *element3 = initElement(7);
+  listElement *removedElement, *peepedElement;
+  
+  addElementToBack(list, element1);
+  addElementToBack(list, element2);
+  addElementToBack(list, element3);
+  
+  removedElement = removeElementFromFront(list);
+  
+  addElementToBack(list, removedElement);
+  
+  peepedElement = peepFront(list);
+  
+  TEST_ASSERT_EQUAL(list->head, peepedElement);
+  TEST_ASSERT_EQUAL(6, peepedElement->value);
+}
 
 

@@ -9,10 +9,10 @@
 - :test: test_initLinkedList_return_NULL_for_both_head_and_tail
   :line: 16
   :message: ''
-- :test: test_addElement_head_and_tail_link_with_an_element
+- :test: test_addElementToBack_head_and_tail_link_with_an_element
   :line: 23
   :message: ''
-- :test: test_addElement_with_two_elements_with_value_ten_and_twenty_respectively
+- :test: test_addElementToBack_with_two_elements_with_value_ten_and_twenty_respectively
   :line: 35
   :message: ''
 - :test: test_removeElementFromFront_with_list_of_value_five_six_seven_should_return_five
@@ -21,11 +21,14 @@
 - :test: test_removedElementFromFront_add_to_the_back_of_the_list_given_value_one_two_three_would_become_two_three_one
   :line: 80
   :message: ''
+- :test: test_peepFront_after_list_has_removeFromFront_and_addElementToBack_should_return_six_given_the_original_list_is_five_six_seven
+  :line: 110
+  :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 6
-  :passed: 6
+  :total: 7
+  :passed: 7
   :failed: 0
   :ignored: 0
 :stdout:

@@ -41,6 +41,7 @@
 
 /* USER CODE BEGIN Includes */
 #include "Task.h"
+#include "LinkedList.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -49,7 +50,8 @@ TIM_HandleTypeDef htim1;
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
 int mySignal = 8;
-TCB *currTcb;
+//TCB *currTcb;
+linkedList *list;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -69,7 +71,6 @@ int sub5Integers(int v1, int v2, int v3, int v4, int v5);
 int sub6Integers(int v1, int v2, int v3, int v4, int v5, int v6);
 void task1(void);
 void task2(void);
-void interruptCounterEnable();
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
@@ -88,7 +89,8 @@ int main(void)
   enum led LED=led1;*/
   tickLed1 = HAL_GetTick();
   tickLed2 = HAL_GetTick();
-  TCB *tcb;
+  //TCB *tcb;
+  listElement *element;
   volatile int j;
   /* USER CODE END 1 */
 
@@ -113,15 +115,22 @@ int main(void)
   MX_TIM1_Init();
 
   /* USER CODE BEGIN 2 */
-  currTcb = initKernel("MainThread");
+  /*currTcb = initKernel("MainThread");
   tcb = createThread("Thread1", task1, 256);
   currTcb->next = tcb;
   tcb = createThread("Thread2", task2, 512);
   currTcb->next->next = tcb;
-  currTcb->next->next->next = currTcb;
+  currTcb->next->next->next = currTcb;*/
+
+  list = initLinkedList();
+  element = initElement("MainThread", NULL, 0);
+  addElementToBack(list, element);
+  element = initElement("Thread1", task1, 256);
+  addElementToBack(list, element);
+  element = initElement("Thread2", task2, 512);
+  addElementToBack(list, element);
 
   //assemblyMain();
-  //interruptCounterEnable();
   __HAL_TIM_ENABLE(&htim1);
   HAL_TIM_Base_Start_IT(&htim1);
   /*volatile int val = add2Integers(23, 56);
@@ -315,16 +324,6 @@ void task2(void){
 
 	while(1){
 		k-=10;
-	}
-}
-
-void interruptCounterEnable(){
-	static int counter = 1;
-	HAL_TIM_Base_Start_IT(&htim1);
-	if(counter == 0){
-		counter--;
-		counter = 1;
-		return;
 	}
 }
 

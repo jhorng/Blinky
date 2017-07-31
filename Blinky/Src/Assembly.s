@@ -101,16 +101,8 @@ here:
   .type MY_TIM1_UP_IRQHandler, %function
 MY_TIM1_UP_IRQHandler:
   // Your task switching code will be started here
-/*
-  ldr	R0, =currTcb	// load address of pointer currTcb to RO
-  ldr	R1, =0x0badface
-  ldr	R0, [R0]		// init currTcb is a pointer in ASM
-  str	R1, [R0, #20]	// store 0x0badface into structure TCB's stackSize through pointer currTcb
-*/
 
-  //bl	interruptCounterEnable
-
-  push	{R4-R11}
+  /*push	{R4-R11}
   ldr	R0, =currTcb
   ldr	R0, [R0]
   str	R13, [R0, #12]
@@ -123,9 +115,26 @@ MY_TIM1_UP_IRQHandler:
   ldr	R1, =currTcb
   str	R0, [R1]
 
+  pop	{R4-R11}*/
+
+  push	{R4-R11}
+  ldr	R0, =list
+  ldr	R0, [R0]
+
+  bl	removeElementFromFront
+  str	R13, [R0, #12]
+  str	R14, [R0, #24]
+  mov	R1, R0
+  ldr	R0, =list
+  ldr	R0, [R0]
+  bl	addElementToBack
+
+  bl	peepFront
+  ldr	R13, [R0, #12]
+  ldr	R14, [R0, #24]
+
   pop	{R4-R11}
 
-  //bx	LR
 
   // Your task switching code ends here
 
