@@ -118,22 +118,28 @@ MY_TIM1_UP_IRQHandler:
   pop	{R4-R11}*/
 
   push	{R4-R11}
+  mov	R4, LR
+  mov	R5, SP
+  push	{LR}
+
   ldr	R0, =list
   ldr	R0, [R0]
 
   bl	removeElementFromFront
-  str	R13, [R0, #12]
-  str	R14, [R0, #24]
+  str	R5, [R0, #12]
+  str	R4, [R0, #24]
   mov	R1, R0
   ldr	R0, =list
   ldr	R0, [R0]
   bl	addElementToBack
 
   bl	peepFront
+  pop	{LR}
   ldr	R13, [R0, #12]
   ldr	R14, [R0, #24]
 
   pop	{R4-R11}
+
 
 
   // Your task switching code ends here

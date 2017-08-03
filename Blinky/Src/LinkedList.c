@@ -35,8 +35,8 @@ listElement *initElement(char *name, void (*task)(void), uint32_t size){
 	  *(uint32_t *)&element->stackPointer[52] = 0xeeeeeeee;	// LR
 	  *(uint32_t *)&element->stackPointer[56] = (uint32_t)task;	// PC
 	  *(uint32_t *)&element->stackPointer[60] = 0x21000000;	// xPSR
-	  return element;
   }
+  return element;
 }
 
 linkedList *initLinkedList(){
